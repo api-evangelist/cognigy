@@ -1,0 +1,39 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.cognigy.com/ai/for-developers/developers/api-and-cli/
+docs: https://docs.cognigy.com/api-reference/management-ui/create-an-api-key/
+summary:
+  types: [apiKey]
+  api_key_in: [header, query]
+  oauth2_flows: []
+schemes:
+- name: X-API-Key
+  type: apiKey
+  in: header
+  parameter: X-API-Key
+  description: >-
+    Primary authentication for the Cognigy.AI REST API. Pass your personal API key
+    in the X-API-Key request header. API keys are generated from user profile
+    settings in the Cognigy.AI management UI.
+  sources: [docs]
+- name: api_key
+  type: apiKey
+  in: query
+  parameter: api_key
+  description: >-
+    Alternative authentication for the Cognigy.AI REST API — the same API key may
+    be supplied as an api_key query-string parameter instead of the X-API-Key header.
+  sources: [docs]
+- name: token
+  type: http
+  scheme: bearer
+  description: >-
+    Short-lived access tokens can be created via the token endpoints
+    (api-reference/tokens/create-a-token) for scoped, time-limited API access.
+  sources: [docs]
+notes:
+- The Webhook Endpoint additionally supports an optional X-Webhook-Key header for
+  requests sent into Cognigy, and optional HTTP Basic Auth for callbacks Cognigy
+  sends to your webhook URL.
+- The API is region/environment-scoped; the API key is only valid against the base
+  URL of the environment where it was issued (Trial, SaaS App, on-prem, or NiCE CXone).
