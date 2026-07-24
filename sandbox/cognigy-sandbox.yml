@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.cognigy.com/ai/for-developers/developers/api-and-cli/
+description: >-
+  Cognigy provides a dedicated Trial environment separate from the production SaaS
+  (App) environment. API keys and the API base URL are scoped per environment, so
+  a trial key exercises the same REST API surface against isolated trial data.
+environments:
+- name: Trial
+  base_url: https://api-trial.cognigy.ai
+  app_url: https://trial.cognigy.ai/
+  signup: https://www.cognigy.com/get-demo
+  description: Free trial environment for evaluating and building against Cognigy.AI.
+- name: SaaS (App)
+  base_url: https://api-app.cognigy.ai
+  app_url: https://app.cognigy.ai/
+  description: Production multi-tenant SaaS environment.
+- name: NiCE CXone
+  base_url: https://cognigy-api-<region>.nicecxone.com
+  description: Cognigy delivered within the NiCE CXone platform (region-scoped host).
+- name: On-premises
+  base_url: BACKEND_BASE_URL_WITH_PROTOCOL environment variable
+  description: Self-hosted deployment; base URL configured per install.
+notes:
+- No published magic/test payment values — Cognigy is a conversational-AI platform, not a payments provider.
+- Test isolation is achieved by using a Trial-environment API key against the trial base URL.

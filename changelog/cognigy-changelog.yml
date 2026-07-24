@@ -1,0 +1,28 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.cognigy.com/release-notes/
+scheme: calver
+scheme_notes: >-
+  Cognigy publishes dated release notes on a calendar-versioned train (YYYY.N,
+  e.g. 2026.14). Each release note page lives at
+  https://docs.cognigy.com/release-notes/<version>/.
+current_version: '2026.14'
+recent_versions:
+- version: '2026.14'
+  url: https://docs.cognigy.com/release-notes/2026.14/
+- version: '2026.13'
+  url: https://docs.cognigy.com/release-notes/2026.13/
+- version: '2026.12'
+  url: https://docs.cognigy.com/release-notes/2026.12/
+- version: '2026.11'
+  url: https://docs.cognigy.com/release-notes/2026.11/
+- version: '2026.10'
+  url: https://docs.cognigy.com/release-notes/2026.10/
+- version: '2026.9'
+  url: https://docs.cognigy.com/release-notes/2026.9/
+- version: '2026.8'
+  url: https://docs.cognigy.com/release-notes/2026.8/
+notes: >-
+  Version list harvested from the docs index (docs.cognigy.com/llms.txt). Per-release
+  highlights, breaking changes, and additions are published on each dated release-note
+  page; capture the recent window here and defer detail to the live source of truth.

@@ -1,0 +1,48 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.npmjs.com/org/cognigy
+packages:
+- language: javascript
+  registry: npm
+  name: "@cognigy/rest-api-client"
+  version: 2026.13.0
+  description: Cognigy REST client with TypeScript definitions for consuming the Cognigy.AI REST API.
+  url: https://www.npmjs.com/package/@cognigy/rest-api-client
+  install: npm install @cognigy/rest-api-client
+  official: true
+- language: javascript
+  registry: npm
+  name: "@cognigy/socket-client"
+  version: 4.9.2
+  description: JavaScript client used to connect to Cognigy.AI Socket Endpoints.
+  url: https://www.npmjs.com/package/@cognigy/socket-client
+  install: npm install @cognigy/socket-client
+  official: true
+  repository: https://github.com/Cognigy/SocketClient
+- language: javascript
+  registry: npm
+  name: "@cognigy/cognigy-cli"
+  version: 2.2.9
+  description: Cognigy Command Line Interface for managing local copies of Cognigy.AI virtual agent projects.
+  url: https://www.npmjs.com/package/@cognigy/cognigy-cli
+  install: npm install -g @cognigy/cognigy-cli
+  official: true
+  repository: https://github.com/Cognigy/Cognigy-CLI
+- language: javascript
+  registry: npm
+  name: "@cognigy/webchat"
+  version: 3.46.0
+  description: Embeddable Webchat widget for Cognigy.AI (React-based).
+  url: https://www.npmjs.com/package/@cognigy/webchat
+  install: npm install @cognigy/webchat
+  official: true
+  repository: https://github.com/Cognigy/Webchat
+- language: javascript
+  registry: npm
+  name: "@cognigy/chat-components"
+  version: 0.77.0
+  description: Reusable React components Cognigy uses to render chat message histories.
+  url: https://www.npmjs.com/package/@cognigy/chat-components
+  install: npm install @cognigy/chat-components
+  official: true
+  repository: https://github.com/Cognigy/chat-components

@@ -1,25 +1,133 @@
 aid: cognigy
 name: Cognigy
-description: Cognigy is a company surfaced as a portfolio company of insight-partners and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Cognigy (now NiCE Cognigy, following NICE's 2024 acquisition) is an enterprise
+  conversational and agentic AI platform for building, deploying, and operating
+  AI Agents across voice, chat, and messaging channels. Cognigy.AI lets teams
+  design conversational flows, connect large language models and knowledge bases,
+  orchestrate omnichannel customer service automation, and augment human contact
+  center agents with real-time Agent Copilot assistance. The platform exposes a
+  comprehensive REST API (the Cognigy.AI API) for managing agents, snapshots,
+  flows, endpoints, users, and organizations, an OData analytics endpoint,
+  webhook and REST endpoints for real-time interactions, a Socket client for
+  webchat, an embeddable Webchat widget, and a first-party command-line interface
+  for managing local copies of virtual agent projects.
 url: https://raw.githubusercontent.com/api-evangelist/cognigy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - insight-partners
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: enriched-from-provider-surface
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://www.cognigy.com/favicon.ico
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-apis: []
+- Conversational AI
+- Agentic AI
+- Contact Center
+- Customer Service Automation
+- Chatbots
+- Voice AI
+- Virtual Agents
+- Enterprise AI
+- Omnichannel
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: Cognigy.AI API
+  description: >-
+    The Cognigy.AI REST API for managing AI Agents throughout their lifecycle —
+    deployment and snapshots, flow configuration and interaction, endpoints,
+    resource monitoring, administration and user management, API key and token
+    creation, debugging and logs, and the simulator. Any action available in the
+    Cognigy.AI frontend can be queried or triggered through this API. Authentication
+    is via an API key passed as an X-API-Key header or an api_key query parameter.
+  humanURL: https://docs.cognigy.com/api-reference/
+  baseURL: https://api-app.cognigy.ai
+  tags:
+  - Conversational AI
+  - Management API
+  - AI Agents
+  properties:
+  - type: Documentation
+    url: https://docs.cognigy.com/api-reference/
+  - type: Authentication
+    url: authentication/cognigy-authentication.yml
+  - type: Webhooks
+    url: asyncapi/cognigy-webhooks.yml
+  - type: Conventions
+    url: conventions/cognigy-conventions.yml
 common:
+- type: TrustCenter
+  url: security/cognigy-trust-center.yml
+- type: DomainSecurity
+  url: security/cognigy-domain-security.yml
 - type: Website
   url: https://www.cognigy.com/
+- type: DeveloperPortal
+  url: https://docs.cognigy.com/
+- type: Documentation
+  url: https://docs.cognigy.com/
+- type: APIReference
+  url: https://docs.cognigy.com/api-reference/
+- type: GettingStarted
+  url: https://docs.cognigy.com/ai/for-developers/developers/api-and-cli/
+- type: Support
+  url: https://support.cognigy.com/hc/en-us
+- type: Blog
+  url: https://www.cognigy.com/blog
+- type: GitHubOrganization
+  url: https://github.com/Cognigy
+- type: SignUp
+  url: https://www.cognigy.com/get-demo
+- type: Login
+  url: https://app.cognigy.ai/
+- type: PrivacyPolicy
+  url: https://www.cognigy.com/privacy-policy
+- type: ChangeLog
+  url: https://docs.cognigy.com/release-notes/
+- type: Compliance
+  url: https://trust.cognigy.com/
+- type: Packages
+  url: packages/cognigy-packages.yml
+- type: SDKs
+  url: packages/cognigy-packages.yml
+- type: CLI
+  url: cli/cognigy-cli.yml
+- type: Components
+  url: components/cognigy-components.yml
+- type: Authentication
+  url: authentication/cognigy-authentication.yml
+- type: Conventions
+  url: conventions/cognigy-conventions.yml
+- type: Webhooks
+  url: asyncapi/cognigy-webhooks.yml
+- type: ChangeLog
+  url: changelog/cognigy-changelog.yml
+- type: LLMsTxt
+  url: llms/cognigy-llms.txt
+- type: Sandbox
+  url: sandbox/cognigy-sandbox.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

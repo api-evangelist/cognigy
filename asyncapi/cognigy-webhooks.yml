@@ -1,0 +1,41 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.cognigy.com/ai/agents/deploy/endpoint-reference/webhook/
+spec_type: Webhooks
+summary: >-
+  Cognigy.AI does not publish an AsyncAPI document. Its real-time / event surface
+  is delivered through configurable Endpoints — a Webhook Endpoint, a REST Endpoint,
+  and a Socket Endpoint — that carry messages into a Flow and deliver bot responses
+  back asynchronously.
+endpoints:
+- name: Webhook Endpoint
+  docs: https://docs.cognigy.com/ai/agents/deploy/endpoint-reference/webhook/
+  direction: bidirectional
+  description: >-
+    External systems POST user messages to the Cognigy.AI Endpoint URL; Cognigy
+    processes them with the assigned Flow and POSTs the bot response asynchronously
+    to your configured webhook (callback) URL.
+  inbound_auth: Optional X-Webhook-Key header (API key) on requests sent to Cognigy.
+  outbound_auth: Optional HTTP Basic Auth on callbacks Cognigy sends to your webhook URL.
+  request_payload:
+    userId: required
+    sessionId: required
+    text: optional
+    data: optional
+  response_payload:
+    userId: string
+    sessionId: string
+    AIOutput:
+      text: string
+      data: object
+      traceId: string
+      source: bot
+      disableSensitiveLogging: boolean
+- name: REST Endpoint
+  docs: https://docs.cognigy.com/ai/agents/deploy/endpoint-reference/rest/
+  direction: request-response
+  description: Synchronous REST endpoint for injecting a message and receiving the bot response inline.
+- name: Socket Endpoint
+  docs: https://docs.cognigy.com/ai/agents/deploy/endpoint-reference/
+  direction: streaming
+  description: WebSocket endpoint consumed by @cognigy/socket-client / the Webchat widget for live bi-directional chat.

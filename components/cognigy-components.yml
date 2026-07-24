@@ -1,0 +1,41 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/Cognigy
+description: >-
+  Client-side, embeddable UI components Cognigy publishes for delivering
+  conversational experiences on the web. Distinct from the server-side REST/socket
+  SDKs in packages/.
+families:
+- name: Webchat
+  description: Embeddable graphical chat widget that provides website visitors access to a Cognigy.AI conversational agent.
+  components:
+  - name: Webchat (v3)
+    package: "@cognigy/webchat"
+    version: 3.46.0
+    repository: https://github.com/Cognigy/Webchat
+    description: The current React-based Cognigy.AI web chat widget.
+  - name: WebchatWidget (v2)
+    repository: https://github.com/Cognigy/WebchatWidget
+    description: The established/prior-generation embeddable webchat widget.
+  loaders:
+  - "@cognigy/socket-client"
+- name: Chat rendering
+  description: Reusable components for rendering chat message histories and rich message types.
+  components:
+  - name: chat-components
+    package: "@cognigy/chat-components"
+    version: 0.77.0
+    repository: https://github.com/Cognigy/chat-components
+    description: React component library rendering Cognigy chat messages (text, cards, carousels, adaptive cards).
+- name: Webchat plugins
+  description: Plugin framework and examples for customizing the webchat rendering surface.
+  components:
+  - name: WebchatPlugins
+    repository: https://github.com/Cognigy/WebchatPlugins
+    description: Example plugins extending the Cognigy webchat with custom message renderers.
+- name: Agent Copilot
+  description: Embeddable/standalone Agent Copilot surface that augments human contact-center agents in real time.
+  components:
+  - name: Agent Copilot (embedded / standalone)
+    docs: https://docs.cognigy.com/agent-copilot/deploy/embedding/
+    description: Real-time assist workspace embeddable into an agent desktop or run standalone.

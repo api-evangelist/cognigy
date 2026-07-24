@@ -1,0 +1,40 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.cognigy.com/api-reference/
+docs: https://docs.cognigy.com/ai/for-developers/developers/api-and-cli/
+summary: >-
+  Cross-cutting request/response conventions for the Cognigy.AI REST API, captured
+  from the developer docs. The API is environment-scoped: an API key is only valid
+  against the base URL of the environment where it was issued.
+authentication:
+  style: api-key
+  header: X-API-Key
+  query_param: api_key
+  ref: authentication/cognigy-authentication.yml
+base_urls:
+  trial: https://api-trial.cognigy.ai
+  saas_app: https://api-app.cognigy.ai
+  on_prem: BACKEND_BASE_URL_WITH_PROTOCOL environment variable
+  nice_cxone: https://cognigy-api-<region>.nicecxone.com
+transport:
+  protocol: https
+  content_type: application/json
+idempotency:
+  supported: false
+  notes: No idempotency-key header/parameter is documented for the Cognigy.AI REST API.
+pagination:
+  style: not-documented
+  notes: List endpoints exist (e.g. flows, endpoints, users); pagination parameters are not centrally documented in the API reference index.
+versioning:
+  scheme: calver
+  notes: >-
+    Platform releases follow a calendar-versioned train (e.g. 2026.14); the REST API
+    is not path-versioned. See changelog/cognigy-changelog.yml and release notes.
+  ref: changelog/cognigy-changelog.yml
+error_envelope:
+  format: http-status + json
+  notes: Errors are returned with standard HTTP status codes and a JSON body; no RFC 9457 problem+json is documented.
+webhooks:
+  ref: asyncapi/cognigy-webhooks.yml
+rate_limiting:
+  documented: false

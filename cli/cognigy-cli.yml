@@ -1,0 +1,35 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/Cognigy/Cognigy-CLI
+docs: https://docs.cognigy.com/ai/for-developers/developers/api-and-cli/
+name: Cognigy.AI CLI
+binary: cognigy
+package: "@cognigy/cognigy-cli"
+version: 2.2.9
+install:
+- method: npm
+  command: npm install -g @cognigy/cognigy-cli
+repository: https://github.com/Cognigy/Cognigy-CLI
+description: >-
+  A series of command-line tools to help Cognigy.AI developers maintain local
+  copies of their virtual agent projects — clone, pull, push, diff, and restore
+  agent resources (flows, lexicons, endpoints, functions, connections, NLU) and
+  run administrative and training tasks against the Cognigy.AI REST API.
+authentication: >-
+  Configured with an API key and the environment base URL (Trial, SaaS App,
+  on-prem, or NiCE CXone) via a config file / cognigy-cli.json.
+command_groups:
+- name: clone
+  description: Clone an agent/project's resources to the local filesystem.
+- name: restore
+  description: Restore local resources back into a Cognigy.AI agent/project.
+- name: pull
+  description: Pull individual resources (flow, lexicon, endpoint, function, etc.) locally.
+- name: push
+  description: Push local resource changes back to Cognigy.AI.
+- name: diff
+  description: Compare local resources against the remote agent state.
+- name: train
+  description: Trigger NLU/intent training and related model tasks.
+- name: execute
+  description: Run administrative/maintenance operations against the API.
