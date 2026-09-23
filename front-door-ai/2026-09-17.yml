@@ -1,0 +1,34 @@
+# Front Door AI Index — cognigy — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: cognigy
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.cognigy.com
+  final_host: www.cognigy.com
+  ownership: own
+  owner: cognigy
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 154
+  host_score: 154
+  density: 126.23
+  words: 1220
+  tiers:
+    agentic: 64
+    core: 90
+    model: 0
+  ambiguous: 61
+  top_terms:
+    AI: 84
+    agent: 60
+    AI agent: 47
+    agentic: 7
+    copilot: 5
+    conversational AI: 5
+    LLMs: 4
+    automation: 1
+    gen ai: 1
+    generative ai: 1
