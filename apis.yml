@@ -47,7 +47,7 @@ accessModel:
 image: https://www.cognigy.com/favicon.ico
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-10-06'
 x-docs-platform: mintlify
 x-docs-platform-confidence: medium
 x-docs-platform-checked: 2026-09-24
@@ -103,6 +103,8 @@ apis:
   - type: Conventions
     url: conventions/cognigy-conventions.yml
 common:
+- url: https://www.cognigy.com/blog/rss.xml
+  type: BlogRSS
 - type: TrustCenter
   url: security/cognigy-trust-center.yml
 - type: DomainSecurity
