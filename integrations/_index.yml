@@ -27,3 +27,82 @@
   relationship: distribution-channel
   status: not-a-workflow
   arazzo: null
+- slug: cognigy-npm-registry
+  label: npm registry
+  partner: npm
+  partner_name: npm registry
+  category: official SDK (JavaScript/TypeScript)
+  type: register
+  channel: package-registry
+  evidence: https://www.npmjs.com/package/@cognigy/chat-components
+  source: edge
+  relationship: distribution-channel
+  contract_reference:
+    register: npm registry (public registry JSON)
+    spec_file: null
+    language: JavaScript/TypeScript
+    packages:
+    - name: '@cognigy/chat-components'
+      version: 0.84.0
+      released: '2026-10-16'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@cognigy/chat-components
+      repo_leg: github-org:cognigy
+      publisher_leg: email:cognigy.com
+      matched_by: domain
+    - name: '@cognigy/cognigy-cli'
+      version: 2.2.9
+      released: '2026-08-17'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@cognigy/cognigy-cli
+      repo_leg: github-org:cognigy
+      publisher_leg: email:cognigy.com
+      matched_by: domain
+    - name: '@cognigy/webchat'
+      version: 3.52.0
+      released: '2026-10-07'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@cognigy/webchat
+      repo_leg: github-org:cognigy
+      publisher_leg: email:cognigy.com
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  status: not-a-workflow
+  arazzo: null
+- slug: cognigy-cloud-security-alliance-star-registry
+  label: Cloud Security Alliance STAR Registry
+  partner_name: Cloud Security Alliance STAR Registry
+  category: Cloud security assurance
+  type: register
+  channel: standard-directory
+  evidence: https://cloudsecurityalliance.org/star/registry/cognigy/services/cognigy-ai
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: CSA STAR Registry (cloudsecurityalliance.org/star/registry)
+    spec_file: null
+    standard: CSA STAR
+    role: star-level-1
+    registered_name: Cognigy
+    registry_id: cognigy
+    service_url: https://cognigy.com/
+    matched_domain: cognigy.com
+    matched_by: domain
+    identity_source: the service URL the organisation filed on its STAR listing (no lookup)
+    levels:
+    - STAR Level 1
+    certified_products: []
+    signal_note: STAR Level 1 (CAIQ self-assessment) = participation; certified_products = one entry per STAR Level
+      2 / STAR for AI Level 2 assessment TYPE (third-party certification, attestation, C-STAR, ValidAIted); lapsed
+      = every instance marked (Deprecated) by the registry; service counts never recorded
+    detected_by: sweep-compliance-assurance.py
+    detected: '2026-10-20'
+  status: not-a-workflow
+  arazzo: null
