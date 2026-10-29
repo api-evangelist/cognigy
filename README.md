@@ -64,6 +64,109 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Cognigy is a company surfaced as a portfolio company of insight-partners and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Cognigy (now NiCE Cognigy, following NICE's 2024 acquisition) is an enterprise conversational and agentic AI platform for building, deploying, and operating AI Agents across voice, chat, and messaging channels. Cognigy.AI lets teams design conversational flows, connect large language models and knowledge bases, orchestrate omnichannel customer service automation, and augment human contact center agents with real-time Agent Copilot assistance. The platform exposes a comprehensive REST API (the Cognigy.AI API) for managing agents, snapshots, flows, endpoints, users, and organizations, an OData analytics endpoint, webhook and REST endpoints for real-time interactions, a Socket client for webchat, an embeddable Webchat widget, and a first-party command-line interface for managing local copies of virtual agent projects.
 
-Backed by: insight-partners — https://www.cognigy.com/
+**Areas:** Company · Conversational AI · AI Agents · Contact Center · Customer Service Automation · Chatbots · Voice AI · Virtual Agents · Enterprise AI · Omnichannel
+
+## Cognigy on APIs.io
+
+Everything profiled for Cognigy is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cognigy/](https://apis.io/providers/cognigy/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Cognigy.AI API](https://apis.io/apis/cognigy/cognigyai-api/) — The Cognigy.AI REST API for managing AI Agents throughout their lifecycle — deployment and snapshots, flow configuration and interaction, endpoints,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Cognigy Webhooks](https://apis.io/asyncapis/cognigy/cognigy-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [Moved to /providers/cognigy/](https://apis.io/servers/cognigy/cognigy/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Cognigy Authentication](https://apis.io/security/cognigy/cognigy-authentication/)
+- [Cognigy Domain Security](https://apis.io/security/cognigy/cognigy-domain-security/)
+- [Cognigy Trust Center](https://apis.io/security/cognigy/cognigy-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.cognigy.com/)
+- [Documentation](https://docs.cognigy.com/)
+- [Getting started](https://docs.cognigy.com/ai/for-developers/developers/api-and-cli/)
+- [API reference](https://docs.cognigy.com/api-reference/)
+- [Sign up](https://www.cognigy.com/get-demo)
+- [Support](https://support.cognigy.com/hc/en-us)
+- [Changelog](https://docs.cognigy.com/release-notes/)
+- [Blog](https://www.cognigy.com/blog)
+- [Compliance](https://trust.cognigy.com/)
+- [Privacy policy](https://www.cognigy.com/privacy-policy)
+- [GitHub](https://github.com/Cognigy)
+
+## API Evangelist rating
+
+**Kin Score 46.9** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 39.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 78.6 |
+| Access clarity | 39.5 |
+
+**Agent readiness 28.4** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 20.6** — AI & Biometrics
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/cognigy/](https://apis.io/providers/cognigy/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Cognigy: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cognigy/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
